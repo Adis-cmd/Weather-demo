@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: WeatherDemo
+  web:
+    resources:
+      static-locations: classpath:/static/
+
+server:
+  port: 9999
+
+weather:
+  api:
+    url: https://api.weatherapi.com/v1/current.json
+    key: ${WEATHER_API_KEY}
+
