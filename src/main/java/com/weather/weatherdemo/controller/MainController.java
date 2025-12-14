@@ -64,6 +64,6 @@ public class MainController {
             model.addAttribute("error",
                     "Не удалось получить данные о погоде для города: " + city);
         }
-        return "page";
+        return "main";
     }
 }
