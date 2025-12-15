@@ -6,7 +6,7 @@ spring:
       static-locations: classpath:/static/
 
 server:
-  port: 9999
+  port: 8099
 
 weather:
   api:

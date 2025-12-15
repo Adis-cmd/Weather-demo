@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: weather_demo-app
+    ports:
+      - "8099:8099"
+    env_file:
+      - .env
+    networks:
+      - weather_demo
+
+networks:
+  weather_demo:
+    driver: bridge
